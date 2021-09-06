@@ -1,7 +1,7 @@
 import React from 'react'
 import { GeneralContainer } from './styled'
 
-export const HomePage = () => {
+const HomePage = () => {
     return (
         <GeneralContainer>
             <h3>Future</h3>
@@ -12,7 +12,7 @@ export const HomePage = () => {
         </GeneralContainer>
     )
 }
-
+export default HomePage
 //<Button
 //type={"submit"}
 //fullWidth
