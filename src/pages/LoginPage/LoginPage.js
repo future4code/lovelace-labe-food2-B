@@ -6,15 +6,16 @@ import LoginForm from "./LoginForm"
 const LoginPage = () => {
     return (
         <ScreenContainer>
+            <h2>Entrar</h2>
          <LoginForm/>
             <SignUpButtonContainer>
                 <Button
                     type={"submit"}
                     fullWidth
                     variant={"text"}
-                    color={"primary"}
+                    color={"inherit"}
                 >
-                    Não possui conta? Cadastre-se
+                    Não possui cadastro? Clique aqui
                     </Button>
             </SignUpButtonContainer>
         </ScreenContainer>
