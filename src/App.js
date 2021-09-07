@@ -1,11 +1,13 @@
 import React from 'react';
-import { HomePage } from './pages/Home/HomePage';
+import theme from './constants/theme';
+import HomePage from "./pages/Home/HomePage"
+import { ThemeProvider } from "@material-ui/core"
 
 function App() {
   return (
-    <div>
-    <HomePage/>
-    </div>
+    <ThemeProvider theme={theme}>
+      <HomePage/>
+    </ThemeProvider>
   );
 }
 
