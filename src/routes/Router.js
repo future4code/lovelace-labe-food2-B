@@ -13,34 +13,34 @@ const Router = () => {
  return (
     <BrowserRouter>
      <Switch>
-        <Route exct path={"/"} 
+        <Route exact path={"/"} 
         component={HomePage}
         />
 
-        <Route exct path={"/cart"} 
+        <Route exact path={"/cart"} 
         component={CartPage}
         />
 
-        <Route exct path={"/details"} 
+        <Route exact path={"/details"} 
         component={DetailsRestaurantPage}
          />
 
-        <Route exct path={"/login"}
+        <Route exact path={"/login"}
          component={LoginPage} 
          />
 
-        <Route exct path={"/Profile"} 
+        <Route exact path={"/profile"} 
         component={ProfilePage}
         />
 
 
-        <Route exct path={"/signUpPage"} 
+        <Route exact path={"/signup"} 
         component={SignUpPage}
         />
      
         <Route>
             <div>Error: Pagina não encontrada</div>
-         </Route>
+        </Route>
      </Switch>
     </BrowserRouter>
  )   
