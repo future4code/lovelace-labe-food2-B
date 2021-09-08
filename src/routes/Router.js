@@ -6,6 +6,7 @@ import DetailsRestaurantPage from "../pages/DetailsRestaurantPage/DetailsRestaur
 import LoginPage from "../pages/LoginPage/LoginPage"
 import ProfilePage from "../pages/ProfilePage/ProfilePage"
 import SignUpPage from "../pages/SignUpPage/SignUpPage"
+import InitialScreen from "../pages/InitialScreen/InitialScreen"
 
 
 
@@ -14,6 +15,10 @@ const Router = () => {
     <BrowserRouter>
      <Switch>
         <Route exact path={"/"} 
+        component={InitialScreen}
+        />
+         
+         <Route exact path={"/home"} 
         component={HomePage}
         />
 
