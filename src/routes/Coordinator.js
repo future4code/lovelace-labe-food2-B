@@ -15,7 +15,7 @@ export const goToCart = (history) => {
 }
 
 export const goToDetails = (history) => {
-    history.push(`/details`)
+    history.push("/details")
 }
 
 export const goToProfile = (history) => {
