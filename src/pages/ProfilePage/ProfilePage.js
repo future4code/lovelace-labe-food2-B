@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../../components/OrderCard/OrderCard";
 import {
   AdressContainer,
   InfoContainer,
@@ -21,10 +22,10 @@ const ProfilePage = () => {
         <p>Endereço cadastrado:</p>
         <p>Rua do Astronauta Perdidão, 0 - Labenu- MG</p>
       </AdressContainer>
-      <div>
+      <p>
         Histórico de pedidos
-        {/* aqui onde vai ter os cards dos components */}
-      </div>
+      </p>
+      <Card></Card>
     </ScreenContainer>
   );
 };
