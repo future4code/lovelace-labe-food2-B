@@ -1,9 +1,10 @@
-import React, {useHistory} from "react";
+import React from "react";
 import { InputsContainer } from "./styled";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import useForm from "../../hooks/useForm";
 import { login } from "../../services/user";
+import {useHistory} from "react-router-dom"
 
 
 const LoginForm = () => {
