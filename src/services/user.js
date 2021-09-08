@@ -1,14 +1,23 @@
 import axios from "axios";
 import {BASE_URL} from "../constants/urls"
-import goToHomePage from "../routes/coordinator"
-
+import {goToHome} from "../routes/Coordinator"
 
   export const login = (body, clear, history) => {
-    axios.post(`${BASE_URL}/login`, body)
+    
+    const headers = {
+      headers: {
+        ContentType: "application/json",
+      },
+    };
+
+    axios.post(`${BASE_URL}/login`, body, headers)
     .then ((res)=> {
       localStorage.setItem("token", res.data.token)
       clear()
-      goToHomePage ()
+      goToHome ()
     })
-    .catch ((err)=>alert("Erro no login"))
+    .catch ((err)=> {
+      alert("Erro no login")
+      console.log(err)
+    })
    }
