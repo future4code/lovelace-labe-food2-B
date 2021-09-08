@@ -14,10 +14,12 @@ import {goToHome} from "../routes/Coordinator"
     .then ((res)=> {
       localStorage.setItem("token", res.data.token)
       clear()
-      goToHome ()
+      goToHome (history)
+      console.log(res.data)
+      alert("Login bem sucedido")
     })
     .catch ((err)=> {
       alert("Erro no login")
-      console.log(err)
+
     })
    }

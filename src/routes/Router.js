@@ -5,7 +5,7 @@ import CartPage from "../pages/CartPage/CartPage"
 import DetailsRestaurantPage from "../pages/DetailsRestaurantPage/DetailsRestaurantPage"
 import LoginPage from "../pages/LoginPage/LoginPage"
 import ProfilePage from "../pages/ProfilePage/ProfilePage"
-import SingUpPage from "../pages/SignUpPage/SignUpPage"
+import SignUpPage from "../pages/SignUpPage/SignUpPage"
 
 
 
@@ -34,8 +34,8 @@ const Router = () => {
         />
 
 
-        <Route exct path={"/singUpPage"} 
-        component={SingUpPage}
+        <Route exct path={"/signUpPage"} 
+        component={SignUpPage}
         />
      
         <Route>
