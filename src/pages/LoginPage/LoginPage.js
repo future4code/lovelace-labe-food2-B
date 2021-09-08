@@ -1,12 +1,14 @@
 import React from "react"
-import { ScreenContainer, SignUpButtonContainer } from "./styled"
+import { LogoImg, ScreenContainer, SignUpButtonContainer, Text } from "./styled"
 import Button from '@material-ui/core/Button'
 import LoginForm from "./LoginForm"
+import logo from "../../assets/logo.png"
 
 const LoginPage = () => {
     return (
         <ScreenContainer>
-            <h2>Entrar</h2>
+            <LogoImg src={logo} />
+            {/* <Text>Entrar</Text> */}
          <LoginForm/>
             <SignUpButtonContainer>
                 <Button

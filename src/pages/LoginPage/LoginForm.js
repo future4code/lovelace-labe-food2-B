@@ -1,14 +1,18 @@
-import React from "react";
+import React, {useHistory} from "react";
 import { InputsContainer } from "./styled";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import useForm from "../../hooks/useForm";
+import { login } from "../../services/user";
+
 
 const LoginForm = () => {
   const [form, onChange, clear] = useForm({ email: "", password: "" });
+  const history = useHistory()
 
   const onSubmitForm = (event) => {
     event.preventDefault();
+    login (form, clear, history)
   };
 
   return (
@@ -42,7 +46,7 @@ const LoginForm = () => {
           variant={"contained"}
           color={"primary"}
         >
-          Fazer Login
+          Entrar
         </Button>
       </form>
     </InputsContainer>
