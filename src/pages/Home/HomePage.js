@@ -1,9 +1,10 @@
 import React from 'react'
+import Feed from '../../components/Feed/Feed'
 
 
 const HomePage = () => {
     return (
-        <h1>Home e Feed</h1>
+      <Feed/>
     )
 }
 export default HomePage
