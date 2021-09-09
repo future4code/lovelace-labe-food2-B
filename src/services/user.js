@@ -1,22 +1,16 @@
-import axios from "axios";
-import {BASE_URL} from "../constants/urls"
-import {goToHome} from "../routes/Coordinator"
+import axios from 'axios';
+import {BASE_URL} from '../constants/urls'
+import {goToHome} from '../routes/Coordinator'
+
 
   export const login = (body, clear, history) => {
     
-    const headers = {
-      headers: {
-        ContentType: "application/json",
-      },
-    };
 
-    axios.post(`${BASE_URL}/login`, body, headers)
+    axios.post(`${BASE_URL}/login`, body)
     .then ((res)=> {
-      localStorage.setItem("token", res.data.token)
+      localStorage.setItem('token', res.data.token)
+      if(res.data.user.hasAddress) goToHome(history)
       clear()
-      goToHome (history)
-      console.log(res.data)
-      alert("Login bem sucedido")
     })
     .catch ((err)=> {
       alert("Erro no login")

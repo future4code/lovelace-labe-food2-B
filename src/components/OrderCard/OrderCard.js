@@ -1,13 +1,22 @@
-import React from 'react'
-import { CardContainer, CardContent1 } from './styled'
+import React, { useState } from 'react'
+import { OrderCardContainer, OrderCardContent } from './styled'
+import { BASE_URL } from '../../constants/urls';
+import useRequestData from '../../hooks/UseRequestData';
 
 const OrderCard = (props) => {
 
+  const order = useRequestData([], `${BASE_URL}/orders/history`);
+  const [history, setHistory] = useState([])
+  React.useEffect(() => {
+    console.log(order, localStorage.getItem('token'))
+
+  }, [order])
+
   return (
-   <CardContainer>
-       <CardContent1>Card</CardContent1>
-   </CardContainer>
+   <OrderCardContainer>
+       <OrderCardContent>Card</OrderCardContent>
+   </OrderCardContainer>
   )
 }
 
-export default Card
+export default OrderCard
