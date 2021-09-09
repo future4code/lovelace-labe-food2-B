@@ -15,8 +15,7 @@ import {goToHome} from "../routes/Coordinator"
       localStorage.setItem("token", res.data.token)
       clear()
       goToHome (history)
-      console.log(res.data)
-      alert("Login bem sucedido")
+      
     })
     .catch ((err)=> {
       alert("Erro no login")
