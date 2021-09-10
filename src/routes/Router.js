@@ -13,40 +13,40 @@ import InitialScreen from "../pages/InitialScreen/InitialScreen"
 const Router = () => {
  return (
     <BrowserRouter>
-     <Switch>
-        <Route exact path={"/"} 
-        component={InitialScreen}
-        />
+         <Switch>
+          <Route exact path={"/"} 
+            component={InitialScreen}
+            />
          
-         <Route exact path={"/home"} 
-        component={HomePage}
-        />
-
-        <Route exact path={"/cart"} 
-        component={CartPage}
-        />
-
-        <Route exact path={"/details"} 
-        component={DetailsRestaurantPage}
+            <Route exact path={"/home"} 
+         component={HomePage}
          />
 
-        <Route exact path={"/login"}
-         component={LoginPage} 
+         <Route exact path={"/cart"} 
+         component={CartPage}
          />
 
-        <Route exact path={"/profile"} 
-        component={ProfilePage}
-        />
+         <Route exact path={"/details"} 
+         component={DetailsRestaurantPage}
+            />
+
+         <Route exact path={"/login"}
+            component={LoginPage} 
+            />
+
+         <Route exact path={"/profile"} 
+         component={ProfilePage}
+         />
 
 
-        <Route exact path={"/signup"} 
-        component={SignUpPage}
-        />
-     
-        <Route>
-            <div>Error: Pagina não encontrada</div>
-        </Route>
-     </Switch>
+         <Route exact path={"/signup"} 
+         component={SignUpPage}
+         />
+      
+         <Route>
+               <div>Error: Pagina não encontrada</div>
+         </Route>
+      </Switch>
     </BrowserRouter>
  )
 }
