@@ -3,15 +3,24 @@ import { LogoImg, ScreenContainer, SignUpButtonContainer, Text } from "./styled"
 import Button from '@material-ui/core/Button'
 import LoginForm from "./LoginForm"
 import logo from "../../assets/logo.png"
+import { goToSignUp } from "../../routes/Coordinator"
+import { useHistory } from 'react-router-dom'
+// import Header from "../components/Header/Header"
+
+
+
 
 const LoginPage = () => {
+    const history = useHistory()
     return (
         <ScreenContainer>
+            {/* <Header/> */}
             <LogoImg src={logo} />
             {/* <Text>Entrar</Text> */}
          <LoginForm/>
             <SignUpButtonContainer>
                 <Button
+                    onClick={() => goToSignUp (history)}
                     type={"submit"}
                     fullWidth
                     variant={"text"}

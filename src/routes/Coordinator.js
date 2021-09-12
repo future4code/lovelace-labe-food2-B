@@ -1,5 +1,5 @@
 export const goToHome = (history) => {
-    history.push("/")
+    history.push("/home")
 }
 
 export const goToLogin = (history) => {
@@ -7,7 +7,7 @@ export const goToLogin = (history) => {
 }
 
 export const goToSignUp = (history) => {
-    history.push("/signUpPage")
+    history.push("/signup")
 }
 
 export const goToCart = (history) => {
@@ -23,4 +23,7 @@ export const goToProfile = (history) => {
 }
 export const goToSearch = (history) => {
     history.push("/search")
+}
+export const goToInitial = (history) => {
+    history.push("/")
 }

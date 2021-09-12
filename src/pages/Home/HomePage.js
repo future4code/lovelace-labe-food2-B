@@ -1,14 +1,10 @@
 import React from 'react'
-import { LogoImg } from '../LoginPage/styled'
-import logoBranca from "../../assets/logoBranca.png"
-import { GeneralContainer } from './styled'
+import Feed from '../../components/Feed/Feed'
 
 
 const HomePage = () => {
     return (
-        <GeneralContainer> 
-         <LogoImg src={logoBranca} />
-        </GeneralContainer>
+      <Feed/>
     )
 }
 export default HomePage
