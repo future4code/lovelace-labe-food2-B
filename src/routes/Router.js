@@ -5,29 +5,29 @@ import CartPage from "../pages/CartPage/CartPage";
 import DetailsRestaurantPage from "../pages/DetailsRestaurantPage/DetailsRestaurantPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import ProfilePage from "../pages/ProfilePage/ProfilePage";
-import SingUpPage from "../pages/SignUpPage/SignUpPage";
+import SignUpPage from "../pages/SignUpPage/SignUpPage";
 
 const Router = () => {
   return (
-   <BrowserRouter>
+    <BrowserRouter> 
       <Switch>
-        <Route exct path={"/"} component={HomePage} />
+        <Route exact path={"/"} component={HomePage} />
 
-        <Route exct path={"/cart"} component={CartPage} />
+        <Route exact path={"/cart"} component={CartPage} />
 
-        <Route exct path={"/details"} component={DetailsRestaurantPage} />
+        <Route exact path={"/details"} component={DetailsRestaurantPage} />
 
-        <Route exct path={"/login"} component={LoginPage} />
+        <Route exact path={"/login"} component={LoginPage} />
 
-        <Route exct path={"/Profile"} component={ProfilePage} />
+        <Route exact path={"/profile"} component={ProfilePage} />
 
-        <Route exct path={"/singUpPage"} component={SingUpPage} />
+        <Route exact path={"/signup"} component={SignUpPage} />
 
         <Route>
           <div>Error: Pagina não encontrada</div>
         </Route>
       </Switch>
-   </BrowserRouter>
+    </BrowserRouter>
   );
 };
 
